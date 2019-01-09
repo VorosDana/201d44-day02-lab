@@ -7,11 +7,14 @@ alert('OK, ' + user + ', we\'re going to play a little yes or no guessing game a
 
 // Get ready to store the number of correct answers
 var numCorrect = 0;
+console.log('numCorrect initialized at: ' + numCorrect.toString());
 
 // Start asking questions
 var answer = prompt(user + ', do you think I have any kids?');
 // Make answer lowercase for evaluation
+console.log('User answer 1: ' + answer + ', correct is no');
 answer = answer.toLowerCase();
+console.log('Answer 1 in lower case: ' + answer);
 
 // Correct answer is no, respond accordingly
 // If input is not understood, it's wrong
@@ -25,11 +28,14 @@ if(answer === 'yes' || answer === 'ye' || answer === 'y')
 } else {
     alert('I\'m afraid I didn\'t understand that, ' + user + ', so I\'m marking it as wrong.');
 }
+console.log('numCorrect after first question: ' + numCorrect.toString());
 
 // No need for more variables, so reuse answer here
 answer = prompt('Next, is my name pronounced with a short \'a\'?');
 // Make answer lowercase for evaluation
+console.log('User answer 2: ' + answer + ', correct is no');
 answer = answer.toLowerCase();
+console.log('Answer 2 in lower case: ' + answer);
 
 // Correct answer is no, same process as the first question
 if(answer === 'yes' || answer === 'ye' || answer === 'y')
@@ -42,11 +48,14 @@ if(answer === 'yes' || answer === 'ye' || answer === 'y')
 } else {
     alert('I\'m afraid I didn\'t understand that, ' + user + ', so I\'m marking it as wrong.');
 }
+console.log('numCorrect after second question: ' + numCorrect.toString());
 
 // Reuse answer again
 answer = prompt(user + ', do you think I\'ve lived on the West Coast most of my life?');
 // Make answer lowercase for evaluation
+console.log('User answer 3: ' + answer + ', correct is no');
 answer = answer.toLowerCase();
+console.log('Answer 3 in lower case: ' + answer);
 
 // Correct answer is no, same process as the first question
 if(answer === 'yes' || answer === 'ye' || answer === 'y')
@@ -59,11 +68,14 @@ if(answer === 'yes' || answer === 'ye' || answer === 'y')
 } else {
     alert('I\'m afraid I didn\'t understand that, ' + user + ', so I\'m marking it as wrong.');
 }
+console.log('numCorrect after third question: ' + numCorrect.toString());
 
 // Reuse answer again
 answer = prompt('Here\'s a fun one, ' + user + ', did I recently get my first video game console?');
 // Make answer lowercase for evaluation
+console.log('User answer 4: ' + answer + ', correct is no');
 answer = answer.toLowerCase();
+console.log('Answer 4 in lower case: ' + answer);
 
 // Correct answer is no, same process as the first question
 if(answer === 'yes' || answer === 'ye' || answer === 'y')
@@ -76,11 +88,14 @@ if(answer === 'yes' || answer === 'ye' || answer === 'y')
 } else {
     alert('I\'m afraid I didn\'t understand that, ' + user + ', so I\'m marking it as wrong.');
 }
+console.log('numCorrect after fourth question: ' + numCorrect.toString());
 
 // Reuse answer again
 answer = prompt('One last question, ' + user + ', am I over 30 years old?');
 // Make answer lowercase for evaluation
+console.log('User answer 5: ' + answer + ', correct is no');
 answer = answer.toLowerCase();
+console.log('Answer 5 in lower case: ' + answer);
 
 // Correct answer is yes this time, same process
 if(answer === 'yes' || answer === 'ye' || answer === 'y')
@@ -93,6 +108,7 @@ if(answer === 'yes' || answer === 'ye' || answer === 'y')
 } else {
     alert('I\'m afraid I didn\'t understand that, ' + user + ', so I\'m marking it as wrong.');
 }
+console.log('numCorrect after fifth question: ' + numCorrect.toString());
 
 // Add up total correct, congratulate if all are correct, 
 // suggest retrying if not
