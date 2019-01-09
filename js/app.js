@@ -126,7 +126,7 @@ console.log('Number guessing answer: ' + randomNum.toString());
 
 do{
     // Reuse answer again for question 6
-    answer = prompt('What number am I thinking of? Guess from 1 to 10. You have four guesses.')
+    answer = prompt('What number am I thinking of, ' + user + '? Guess from 1 to 10. You have four guesses.')
     // log the user input, and the correct answer
     console.log('User guessed: ' + answer);
     console.log('Correct answer: ' + randomNum.toString());
@@ -165,7 +165,7 @@ guessingAnswerWrong = true;
 
 do
 {
-    answer = prompt('What is your guess? (remember, languages are proper nouns)\n You have ' + guessesRemaining.toString() + ' guesses remaining.');
+    answer = prompt('What is your guess, ' + user + '? (remember, languages are proper nouns)\n You have ' + guessesRemaining.toString() + ' guesses remaining.');
     console.log('User guessed ' + answer + ' with ' + guessesRemaining.toString() + ' guesses remaining.');
 
     if(languagesUsed.includes(answer))
