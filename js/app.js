@@ -123,10 +123,11 @@ var randomNum = 1 + Math.floor(Math.random() * 10);
 // https://www.w3schools.com/js/js_random.asp
 
 console.log('Number guessing answer: ' + randomNum.toString());
+alert('What number am I thinking of, ' + user + '? Guess from 1 to 10. You have four guesses.');
 
 do{
     // Reuse answer again for question 6
-    answer = prompt('What number am I thinking of, ' + user + '? Guess from 1 to 10. You have four guesses.')
+    answer = prompt('What is your guess, ' + user + '? Guess from 1 to 10. You have ' + guessesRemaining.toString() + ' guesses remaining.');
     // log the user input, and the correct answer
     console.log('User guessed: ' + answer);
     console.log('Correct answer: ' + randomNum.toString());
