@@ -151,6 +151,12 @@ do{
     }
 } while(guessingAnswerWrong &&  guessesRemaining);
 
+// If guesses ran out, give the correct answer
+if(guessesRemaining == 0)
+{
+alert('Well, you\'re out of guesses! It was ' + randomNum.toString() + '!');
+}
+
 console.log('numCorrect after sixth question: ' + numCorrect.toString());
 
 // Set up array for question 7
@@ -180,6 +186,12 @@ do
         guessesRemaining--;
     }
 } while(guessingAnswerWrong && guessesRemaining);
+
+// If guesses ran out, give the acceptable answers
+if(guessesRemaining == 0)
+{
+alert('Well, you\'re out of guesses! I\'ve worked with Latin, C, C++, and Java!');
+}
 
 console.log('numCorrect after seventh question: ' + numCorrect.toString());
 
