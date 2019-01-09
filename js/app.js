@@ -1,3 +1,4 @@
+"use strict";
 // Ask for user name
 var user = prompt('Hello, what is your name?');
 console.log('User name: ', user);
