@@ -1,11 +1,19 @@
+*{
+    /* border: 2px dotted black; */
+}
+
+body{
+    background: #FCEBFF;
+    color: #403D42;
+}
+
 header {
-    background: #CCD;
-    color: #000;
+    background: #75307F;
+    color: #F7EBFF;
     padding-top: 10px;
     padding-bottom: 6px;
     padding-left: 4px;
     margin-bottom: 15px;
-
 }
 h1 {
     font-size: 40px;
@@ -21,8 +29,9 @@ p {
 }
 
 ul{
+    display: inline-block;
     list-style: disc;
-    /* list-style-position: outside; */
+    list-style-position: outside;
     padding: 4px 10px;
     margin: 0px 10px;
 }
@@ -33,12 +42,31 @@ ul.secondLevelUL{
 }
 
 ol{
-    padding: 0px 10px;
+    display: inline-block;
+    /* border: 5px solid red; */
+    /* display: inline-block; */
+    padding: 5px 20px;
     margin: 0px 10px;
     list-style: decimal;
 }
 
+/* ol li{
+    display: block;
+}
+
+ol:nth-child(2){
+    display:inline;
+} */
+
+section{
+    display: inline-block;
+    border: 3px solid;
+    border-radius: 15px;
+    margin: 20px
+}
+
 h4{
     font-size: 20px;
+    margin: 5px;
     font-weight: bold;
 }
